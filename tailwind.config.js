@@ -51,6 +51,7 @@ module.exports = {
         'tp-san-marino': "#506A99",
         'tp-light-bg': "rgba(255, 255, 255, 0.5)",
         'tp-overlay-bg': "rgba(96, 96, 96, 0.3)",
+        'tp-salmon-pink': "#F2A094"
       },
       backgroundImage: {
         'home_header_mobile': "url('home/home_header_mobile.jpg')",
@@ -125,6 +126,7 @@ module.exports = {
         '56': '56px',
         '63': '63px',
         '73': '73px',
+        '80': '80px',
       },
       minHeight: {
         27: "27px",
