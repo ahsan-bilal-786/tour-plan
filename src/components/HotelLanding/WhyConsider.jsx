@@ -1,0 +1,20 @@
+import React from 'react';
+import WhyConsiderCard from 'components/HotelLanding/WhyConsierCard';
+
+const WhyConsider = () => {
+  return (
+    <section className="bg-tp-purple-500 text-white">
+      <div className="container mx-auto bg-primary text-center py-67">
+        <h1 className="text-30 mb-56 font-groteskSemiBold text-tp-purple font-semibold">Why you should consider staying in a Disney hotel first</h1>
+        <div className="flex xs:flex-col md:flex-row gap-x-3">
+          <WhyConsiderCard />
+          <WhyConsiderCard />
+          <WhyConsiderCard />
+          <WhyConsiderCard />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyConsider;
