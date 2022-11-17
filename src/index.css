@@ -36,3 +36,8 @@
 body {
   font-family: "Euclid Circular B", sans-serif;
 }
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
