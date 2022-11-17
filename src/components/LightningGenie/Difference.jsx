@@ -4,7 +4,7 @@ import React from 'react';
 const Row = ({ isOdd, title, genie, lane }) => {
   return (
     <div className={`${isOdd ? "bg-tp-gray-400" : ""}`}>
-      <div className="max-w-[1300px] mx-auto">
+      <div className="max-w-1300 mx-auto">
         <div className='flex xs:flex-col md:flex-row md:text-left xs:gap-3 justify-between xs:py-6 xs:px-7 '>
           <div className="md:max-w-[331px] xs:text-2xl md:text-3xl  flex-1 font-light ">
             <div className='md:max-w-[198px] font-light font-eucliarLight'>{title}</div>
@@ -31,7 +31,7 @@ const Difference = () => {
 
         <div>
           <div className='table-header xs:hidden md:block'>
-            <div className='max-w-[1300px] mx-auto'>
+            <div className='max-w-1300 mx-auto'>
               <div className="flex justify-between mb-3 text-30 font-light font-eucliarLight text-left xs:py-6 xs:px-7">
                 <div className="max-w-[331px] flex-1"></div>
                 <div className="max-w-[435px] flex-1">
