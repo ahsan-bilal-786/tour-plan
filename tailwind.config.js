@@ -135,6 +135,7 @@ module.exports = {
       },
       maxWidth: {
         960: '960px',
+        1000: '1000px',
         1300: '1300px'
       },
       gap: {
