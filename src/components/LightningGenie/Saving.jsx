@@ -5,7 +5,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 const Row = ({ isOdd, title, avgTime, deadline }) => {
   return (
     <div className={`min-w-[500px] ${isOdd ? "bg-tp-bluish-300/50" : ""}`}>
-      <div className={`\max-w-[1080px] mx-auto`}>
+      <div className={`max-w-[1080px] mx-auto`}>
         <div className='flex md:text-left xs:text-15 md:text-18 font-bold xs:gap-3 justify-between py-3 xs:pl-6 md:pl-0'>
           <div className="w-[49%]">{title}</div>
           <div className="w-[30%]">{avgTime}</div>
