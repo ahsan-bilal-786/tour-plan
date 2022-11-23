@@ -8,7 +8,8 @@ const App = () => {
     <>
       {false && <HotelLanding />}
       {false && <LightningGenie />}
-      <ParkLanding />
+      {true && <ParkLanding />}
+      
     </>
   );
 }
