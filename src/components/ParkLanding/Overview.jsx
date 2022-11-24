@@ -15,6 +15,21 @@ const Footer = ({ title, children }) => {
 }
 
 
+const Event = ({ day, date, count, title, time, className }) => {
+  return (
+    <div className='text-center max-w-[125px]'>
+      <div className='text-18 font-medium mb-3'>{day}</div>
+      <div className='shadow-lg md:pt-3 pb-7 px-[10px] rounded-xl'>
+        <div className='xs:text-13 md:text-15 text-tp-gray-200 mb-1 uppercase'>{date}</div>
+        <div className={`xs:text-46 md:text-60 font-semibold text-groteskSemiBold ${className}`}>{count}</div>
+        <div className={`text-13 mb-2 font-semibold text-groteskBold ${className}`}>{title}</div>
+        <div className='text-15 font-bold	'>{time}</div>
+      </div>
+    </div>
+  );
+}
+
+
 const Overview = () => {
   return (
     <Container bg="bg-white" className="xs:pt-[49px] md:pt-[92px] xs:pb-[70px] md:pb-[102px]">
@@ -27,6 +42,32 @@ const Overview = () => {
         </div>
         <div className='md:max-w-[420px]'>
           <SmallHeadings>Today’s Park Information and Crowd Levels</SmallHeadings>
+          <div className='flex my-5 gap-3 justify-around'>
+            <Event
+              className="text-tp-redoxide-500"
+              day="Mon"
+              date="OCT 3"
+              count="8"
+              title="Large Crowds"
+              time="(8:30am) / 9am–11pm"
+            />
+            <Event
+              className="text-tp-venetian-yellow"
+              day="Mon"
+              date="OCT 3"
+              count="3"
+              title="Large Crowds"
+              time="(8:30am) / 9am–11pm"
+            />
+            <Event
+              className="text-tp-redoxide-500"
+              day="Mon"
+              date="OCT 3"
+              count="8"
+              title="Large Crowds"
+              time="(8:30am) / 9am–11pm"
+            />
+          </div>
           <SmallHeadings>See the full Crowd Calendar <FontAwesomeIcon icon={faArrowRight} className="ml-3" /></SmallHeadings>
         </div>
       </div>

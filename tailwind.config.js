@@ -51,7 +51,9 @@ module.exports = {
         'tp-san-marino': "#506A99",
         'tp-light-bg': "rgba(255, 255, 255, 0.5)",
         'tp-overlay-bg': "rgba(96, 96, 96, 0.3)",
-        'tp-salmon-pink': "#F2A094"
+        'tp-salmon-pink': "#F2A094",
+        'tp-light-silver': "#D9D9D9",
+        'tp-venetian-yellow': "#F09141"
       },
       backgroundImage: {
         'home_header_mobile': "url('home/home_header_mobile.jpg')",
@@ -80,6 +82,7 @@ module.exports = {
         '24': '24px',
         '30': '30px',
         '36': '36px',
+        '46': '46px',
         '50': '50px',
         '60': '60px',
       },
@@ -126,6 +129,7 @@ module.exports = {
         '38': '38px',
         '40': '40px',
         '45': '45px',
+        '50': '50px',
         '56': '56px',
         '62': '62px',
         '63': '63px',
