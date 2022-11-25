@@ -4,7 +4,7 @@ import Container from 'components/ParkLanding/elements/Container';
 
 const SpecialEvents = () => {
   return (
-    <Container bg="bg-tp-purple-500" maxWidth="960" className="xs:pt-68 md:pt-62 xs:pb-56 md:pb-92 xs:px-30 md:px-0 text-center">
+    <Container bg="bg-tp-purple-500" maxWidth="960" className="xs:pt-68 md:pt-62 xs:pb-[68px] md:pb-92 xs:px-30 md:px-0 text-center">
       <h3 className='font-groteskBold text-tp-purple xs:text-24 sm:text-30 font-semibold xs:mb-5 md:mb-6'>
         Special Events at the Magic Kingdom
       </h3>
