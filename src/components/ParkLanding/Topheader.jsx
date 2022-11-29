@@ -17,16 +17,18 @@ const Topheader = () => {
     <Container bg="bg-tp-neutral" className="xs:pt-0 md:pt-0 xs:pb-0 md:pb-0 md:ml-10 md:!max-w-[100%]" >
       <div className='flex xs:flex-col md:flex-row justify-between items-center'>
         <div className='font-bold xs:py-4'>Magic Kingdom</div>
-        <div className='relative xs:overflow-auto md:overflow-hidden xs:w-full md:w-auto flex md:items-center md:justify-center md:flex-1 scrollbar-hide'>
-          <div className="bg-tp-neutral xs:absolute md:hidden xs:left-0 px-1"><FontAwesomeIcon  icon={faAngleLeft}/></div>
-          <ul className='flex md:gap-11 whitespace-nowrap xs:px-2 md:px-1'>
-            <NavItem isActive={true}>Overview</NavItem>
-            <NavItem>When to Visit</NavItem>
-            <NavItem>Planning Your Day</NavItem>
-            <NavItem>What to See and Do</NavItem>
-            <NavItem>Dinning</NavItem>
-          </ul>
-          <div className="bg-tp-neutral xs:absolute md:hidden xs:right-0  px-1"><FontAwesomeIcon icon={faAngleRight}/></div>
+        <div className='relative w-full md:flex md:flex-1 overflow-hidden'>
+          <div className='xs:overflow-auto md:overflow-hidden xs:w-full md:w-auto flex md:items-center md:justify-center md:flex-1 scrollbar-hide'>
+            <ul className='flex md:gap-11 whitespace-nowrap xs:px-2 md:px-1'>
+              <NavItem isActive={true}>Overview</NavItem>
+              <NavItem>When to Visit</NavItem>
+              <NavItem>Planning Your Day</NavItem>
+              <NavItem>What to See and Do</NavItem>
+              <NavItem>Dinning</NavItem>
+            </ul>
+          </div>
+          <div className="bg-tp-neutral xs:absolute md:hidden xs:left-0 xs:top-0"><FontAwesomeIcon icon={faAngleLeft} /></div>
+          <div className="bg-tp-neutral xs:absolute md:hidden xs:right-0  xs:top-0"><FontAwesomeIcon icon={faAngleRight} /></div>
         </div>
       </div>
     </Container>
