@@ -19,6 +19,8 @@ import RoundOutDay from 'components/ParkLanding/RoundOutDay';
 import Attractions from 'components/ParkLanding/Attractions';
 import Dinning from 'components/ParkLanding/Dinning';
 import DinningSources from 'components/ParkLanding/DinningSources';
+import Topheader from 'components/ParkLanding/Topheader';
+
 /**
  * 
  * @returns https://www.figma.com/file/x2h1F14g7XMFC24vrjbmIJ/Touring-Plans-Home?node-id=3365%3A3332&t=uhpkw9LvxLRVjHDK-0
@@ -26,6 +28,7 @@ import DinningSources from 'components/ParkLanding/DinningSources';
 const ParkLanding = () => {
   return (
     <>
+      <Topheader />
       <Banner />
       <Overview />
       <WhenToVisit />
