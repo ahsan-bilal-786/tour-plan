@@ -51,7 +51,9 @@ module.exports = {
         'tp-san-marino': "#506A99",
         'tp-light-bg': "rgba(255, 255, 255, 0.5)",
         'tp-overlay-bg': "rgba(96, 96, 96, 0.3)",
-        'tp-salmon-pink': "#F2A094"
+        'tp-salmon-pink': "#F2A094",
+        'tp-light-silver': "#D9D9D9",
+        'tp-venetian-yellow': "#F09141"
       },
       backgroundImage: {
         'home_header_mobile': "url('home/home_header_mobile.jpg')",
@@ -76,9 +78,11 @@ module.exports = {
         '13': '13px',
         '15': '15px',
         '18': '18px',
+        '20': '20px',
         '24': '24px',
         '30': '30px',
         '36': '36px',
+        '46': '46px',
         '50': '50px',
         '60': '60px',
       },
@@ -123,19 +127,28 @@ module.exports = {
         '27': '27px',
         '30': '30px',
         '38': '38px',
+        '40': '40px',
         '45': '45px',
+        '50': '50px',
         '56': '56px',
+        '62': '62px',
         '63': '63px',
+        '68': '68px',
         '73': '73px',
         '80': '80px',
+        '88': '88px',
+        '92': '92px',
+        '138': '138px',
       },
       minHeight: {
         27: "27px",
         152: "152px",
       },
       maxWidth: {
+        910: '910px',
         960: '960px',
         1000: '1000px',
+        1085: '1085px',        
         1300: '1300px'
       },
       gap: {
