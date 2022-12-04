@@ -14,9 +14,11 @@ const Search = () => {
       <HeaderComponent handleSearch={() => setActiveSearch(!isActiveSearch)} />
       <Container bg="bg-white" className="xs:pt-[51px] md:pt-[100px] xs:pb-[69px] md:pb-[117px]">
         <div className='md:max-w-[792px] mx-auto'>
-          <InputField handleChange={setKeword} value={keyword} type={keyword.length > 3 ? "outlined" : "filled"} />
+          <InputField handleChange={setKeword} value={keyword} type="filled" />
+          <InputField handleChange={setKeword} value={keyword} type="outlined" />
           <SearchResults />
-          <TopSearch isLight={keyword.length > 3} />
+          <TopSearch />
+          <TopSearch isLight={true} />
           <NoResults />
         </div>
       </Container>

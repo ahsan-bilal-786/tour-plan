@@ -5,7 +5,7 @@ import logo from "assets/images/logo.png"
 
 const Header = ({ handleSearch }) => {
   return (
-    <div className='flex px-[48px] h-[79px] justify-between items-center border-b border-black'>
+    <div className='flex xs:px-[18px] md:px-[48px] h-[79px] justify-between items-center border-b border-black'>
       <div>
         <FontAwesomeIcon icon={faBars} />
       </div>

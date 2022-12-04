@@ -38,8 +38,12 @@ export const ListItem = ({ title }) => {
 const SearchResult = ({ date, children }) => {
   return (
     <div className='flex mb-5'>
-      <div className='w-[90px] h-[57px] mr-2 md:mr-12'>
-        <img alt="imagealt" className='shadow max-w-full h-auto align-middle border-none' src="https://via.placeholder.com/90x57.png" />
+      <div className='w-[90px] max-h-[57px] mr-5 shrink-0'>
+        <img 
+          alt="imagealt"
+          className='shadow max-w-full h-auto align-middle border-none'
+          src="https://via.placeholder.com/90x57.png"
+        />
       </div>
       <div className='text-18'>
         {children}
