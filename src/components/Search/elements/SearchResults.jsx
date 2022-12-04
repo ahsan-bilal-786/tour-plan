@@ -10,7 +10,7 @@ export const Heading = ({ title }) => {
 
 export const TaglineHeading = ({ title }) => {
   return (
-    <span className='text-[#8E3769]'>
+    <span className='text-tp-purple-500'>
       {title}
     </span>
   );
@@ -19,7 +19,7 @@ export const TaglineHeading = ({ title }) => {
 
 export const Tagline = ({ children }) => {
   return (
-    <div className='text-[12px] text-[#606060] font-semibold uppercase'>
+    <div className='text-[12px] text-tp-gray-200 font-semibold uppercase'>
       {children}
     </div>
   );
@@ -28,7 +28,7 @@ export const Tagline = ({ children }) => {
 
 export const ListHeading = ({ title }) => {
   return (
-    <div className='text-3 font-semibold uppercase text-[#606060] mb-3'>
+    <div className='text-3 font-semibold uppercase text-tp-gray-200 mb-3'>
       {title}
     </div>
   );
@@ -56,8 +56,8 @@ const SearchResult = ({ date, children }) => {
       </div>
       <div className='text-18'>
         {children}
-        {date && <div className='text-[#606060] uppercase font-semibold text-[12px]'>
-          <span className='text-[#F65766] mr-2 uppercase'>BLOG</span>
+        {date && <div className='text-tp-gray-200 uppercase font-semibold text-[12px]'>
+          <span className='text-tp-purple mr-2 uppercase'>BLOG</span>
           <span className='font-semibold'>{date}</span>
         </div>}
       </div>

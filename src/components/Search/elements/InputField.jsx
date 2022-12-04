@@ -5,8 +5,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const inputClasses = {
   common: `w-[100%] xs:text-18  md:text-24 font-medium xs:px-4 xs:py-3 md:px-9 md:py-18 mr-[27px] `,
-  filled: ' bg-[#F2F2F2] border border-[#F2F2F2] rounded-md  focus:border-[#F2F2F2] focus:outline-none focus:ring-0 ',
-  outlined: 'border-0 border-b border-[#C4C4C4] focus:outline-none focus:ring-0 focus:border-[#C4C4C4]',
+  filled: ' bg-tp-neutral border border-tp-neutral rounded-md  focus:border-tp-neutral focus:outline-none focus:ring-0 ',
+  outlined: 'border-0 border-b border-tp-gray-300 focus:outline-none focus:ring-0 focus:border-tp-gray-300',
 }
 
 const InputField = ({ type, value, handleChange }) => {
@@ -20,7 +20,7 @@ const InputField = ({ type, value, handleChange }) => {
         type="text"
       />
       <FontAwesomeIcon 
-        className='cursor-pointer h-[18px] w-[18px] text-[#F65766]' 
+        className='cursor-pointer h-[18px] w-[18px] text-tp-purple' 
         icon={faTimes} 
         onClick={(e) => handleChange("")} 
       />
