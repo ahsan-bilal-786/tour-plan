@@ -4,8 +4,8 @@ import Container from 'elements/Container';
 
 const Attraction = () => {
   return (
-    <Container bg="bg-tp-purple" className="bg-white md:!max-w-[850px]" >
-      <div className='xs:max-w-[342px] md:max-w-[800px] mx-auto'>
+    <Container bg="bg-tp-purple" className="bg-white md:!max-w-850" >
+      <div className='xs:max-w-342 md:max-w-800 mx-auto'>
         <AttractionCard />
         <AttractionCard />
       </div>

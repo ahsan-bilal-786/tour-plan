@@ -17,7 +17,7 @@ const RatingStars = ({ size = 18 }) => (
 export const AttractionCard = () => {
   return (
     <div className='flex xs:flex-col md:flex-row pt-7 pb-12 items-center'>
-      <div className='w-[128px] md:w-[175px] xs:mb-3 md:mb-0 mr-2 md:mr-12 shrink-0 md:shrink-1'>
+      <div className='w-128 md:w-175 xs:mb-3 md:mb-0 mr-2 md:mr-12 shrink-0 md:shrink-1'>
         <img alt="imagealt" className='shadow rounded-full max-w-full h-auto align-middle border-none' src="https://via.placeholder.com/223x223.png" />
       </div>
       <div>
