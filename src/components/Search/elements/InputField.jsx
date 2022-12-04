@@ -11,7 +11,7 @@ const inputClasses = {
 
 const InputField = ({ type, value, handleChange }) => {
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center mb-[58px]'>
       <input
         className={`${inputClasses.common} ${get(inputClasses, `${type}`, inputClasses.filled)}`}
         onChange={(e) => handleChange(e.target.value)}

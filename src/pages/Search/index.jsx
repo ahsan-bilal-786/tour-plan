@@ -8,16 +8,16 @@ import InputField from 'components/Search/elements/InputField';
 
 const Search = () => {
   const [isActiveSearch, setActiveSearch] = useState(false);
-  const [keyword, setKeword] = useState(false);
+  const [keyword, setKeword] = useState("");
   return (
     <>
       <HeaderComponent handleSearch={() => setActiveSearch(!isActiveSearch)} />
       <Container bg="bg-white" className="xs:pt-[51px] md:pt-[100px] xs:pb-[69px] md:pb-[117px]">
         <div className='md:max-w-[792px] mx-auto'>
           <InputField handleChange={setKeword} value={keyword} type={keyword.length > 3 ? "outlined" : "filled"} />
-          <TopSearch />
-          <NoResults />
           <SearchResults />
+          <TopSearch isLight={keyword.length > 3} />
+          <NoResults />
         </div>
       </Container>
     </>
