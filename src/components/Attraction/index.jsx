@@ -32,26 +32,26 @@ export const AttractionCard = () => {
             </div>
           </div>
           <div className='md:w-1/2 mb-2 md:mb-0 xs:text-center md:text-left'>
-            <div className="text-13  md:leading-7 font-medium uppercase" >#10 of 38 magic kingdom attractions</div>
-            <div className="text-13  mb-2 font-medium uppercase" >RESTRICTIONS: 40'' or taller</div>
+            <div className="text-13  md:leading-7 text-eucliarMedium font-medium uppercase" >#10 of 38 magic kingdom attractions</div>
+            <div className="text-13  mb-2 text-eucliarMedium font-medium uppercase" >RESTRICTIONS: 40'' or taller</div>
           </div>
         </div>
 
         <div className='flex flex-col md:flex-row gap-x-5'>
           <div className='md:w-1/2 flex flex-col md:gap-y-3'>
-            <div className='xs:mb-4 md:mb-0'>Lorem ipsum dolor sit lorem adipiscing disney lorem amet ipsum set imagineering.</div>
+            <div className='xs:mb-4 md:mb-0 font-normal'>Lorem ipsum dolor sit lorem adipiscing disney lorem amet ipsum set imagineering.</div>
           </div>
           <div className='md:w-1/2 flex flex-col md:gap-y-3'>
             <div className='flex justify-between'>
               <div>
-                <div className="text-13  mb-2 font-medium uppercase" >PRESCHOOL: 4</div>
-                <div className="text-13 mb-2 font-medium uppercase">Grade schooL: 4</div>
-                <div className="text-13 mb-2 font-medium uppercase">teens: 4.5</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase" >PRESCHOOL: 4</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase">Grade schooL: 4</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase">teens: 4.5</div>
               </div>
               <div >
-                <div className="text-13 mb-2 font-medium uppercase">young adults: 4</div>
-                <div className="text-13 mb-2 font-medium uppercase">over 30: 4.5</div>
-                <div className="text-13 mb-2 font-medium uppercase">seniors: 4</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase">young adults: 4</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase">over 30: 4.5</div>
+                <div className="text-13 mb-2 text-eucliarMedium font-medium uppercase">seniors: 4</div>
               </div>
             </div>
           </div>
