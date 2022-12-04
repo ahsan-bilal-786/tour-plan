@@ -47,7 +47,7 @@ export const ListItem = ({ title }) => {
 const SearchResult = ({ date, children }) => {
   return (
     <div className='flex mb-5'>
-      <div className='w-[90px] max-h-[57px] mr-5 shrink-0'>
+      <div className='w-90 max-h-57 mr-5 shrink-0'>
         <img 
           alt="imagealt"
           className='shadow max-w-full h-auto align-middle border-none'
@@ -56,7 +56,7 @@ const SearchResult = ({ date, children }) => {
       </div>
       <div className='text-18'>
         {children}
-        {date && <div className='text-tp-gray-200 uppercase font-semibold text-[12px]'>
+        {date && <div className='text-tp-gray-200 uppercase font-semibold text-12'>
           <span className='text-tp-purple mr-2 uppercase'>BLOG</span>
           <span className='font-semibold'>{date}</span>
         </div>}
