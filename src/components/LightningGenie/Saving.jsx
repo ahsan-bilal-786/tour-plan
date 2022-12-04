@@ -18,10 +18,10 @@ const Row = ({ isOdd, title, avgTime, deadline }) => {
 
 const Thumb = ({ title, isActive }) => {
   return (
-    <div className={`flex-1 flex flex-col relative text-18 font-medium items-center uppercase md:pb-6  ${isActive ? "" : "opacity-50"}`}>
+    <div className={`flex-1 flex flex-col relative text-18 font-medium items-center uppercase md:pb-6  ${isActive ? "[&>span]:md:inline-block" : "opacity-50 [&>span]:hidden"}`}>
       <img className="mb-3 shadow rounded-full max-w-full h-auto align-middle border-none" src="https://via.placeholder.com/223x223.png" width="50px" height="50px" alt="" />
       <div className='xs:hidden md:block'>{title}</div>
-      <span className={`absolute bottom-[-16px] bg-tp-neutral xs:hidden ${isActive ? "md:inline-block" : "hidden"}`}>
+      <span className={`absolute bottom-[-16px] bg-tp-neutral xs:hidden `}>
         <FontAwesomeIcon icon={faAngleDown} className="m-[-1px]" />
       </span>
     </div>
@@ -40,9 +40,9 @@ const Saving = () => {
         </div>
         <section>
           <div className='flex mb-10 max-w-[1080px] mx-auto xs:border-0 md:border-b-[2px] border-black'>
-            <Thumb title="Magic Kingdom" isActive={true} />
+            <Thumb title="Magic Kingdom" isActive={false} />
             <Thumb title="EPCOT" isActive={false} />
-            <Thumb title="HOLLYWOOD STUDIOS" isActive={false} />
+            <Thumb title="HOLLYWOOD STUDIOS" isActive={true} />
             <Thumb title="ANIMAL Kingdom" isActive={false} />
           </div>
 
