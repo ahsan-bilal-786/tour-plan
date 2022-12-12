@@ -53,7 +53,8 @@ module.exports = {
         'tp-overlay-bg': "rgba(96, 96, 96, 0.3)",
         'tp-salmon-pink': "#F2A094",
         'tp-light-silver': "#D9D9D9",
-        'tp-venetian-yellow': "#F09141"
+        'tp-venetian-yellow': "#F09141",
+        'tp-jacarta': '#412362'
       },
       backgroundImage: {
         'home_header_mobile': "url('home/home_header_mobile.jpg')",
@@ -91,6 +92,7 @@ module.exports = {
         '18': '18px',
         '35': '35px',
         '79': '79px',
+        '190': '190px',
       },
       lineHeight: {
         '46': '46px',
