@@ -8,8 +8,13 @@ import LightningGenie from 'pages/LightningGenie';
 import ParkLanding from 'pages/ParkLanding';
 import Attraction from 'pages/Attraction';
 import Search from 'pages/Search';
+import AttractionDetail from 'pages/AttractionDetail';
 
 const router = createBrowserRouter([
+  {
+    path: "/attraction_detail",
+    element: <AttractionDetail />,
+  },
   {
     path: "/hotel_Landing",
     element: <HotelLanding />,
