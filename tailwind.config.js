@@ -75,6 +75,7 @@ module.exports = {
         '0xl': '0px 4px 10px rgba(0, 0, 0, 0.2)',
       },
       fontSize: {
+        '12': '12px',
         '13': '13px',
         '15': '15px',
         '18': '18px',
@@ -85,6 +86,11 @@ module.exports = {
         '46': '46px',
         '50': '50px',
         '60': '60px',
+      },
+      height: {
+        '18': '18px',
+        '35': '35px',
+        '79': '79px',
       },
       lineHeight: {
         '46': '46px',
@@ -131,6 +137,7 @@ module.exports = {
         '45': '45px',
         '50': '50px',
         '56': '56px',
+        '58': '58px',
         '62': '62px',
         '63': '63px',
         '68': '68px',
@@ -144,6 +151,9 @@ module.exports = {
         27: "27px",
         152: "152px",
       },
+      maxHeight: {
+        57: "57px",
+      },
       maxWidth: {
         910: '910px',
         960: '960px',
@@ -154,7 +164,11 @@ module.exports = {
       gap: {
         '46': '46px',
         '130': '130px',
-      }
+      },
+      width: {
+        '18': '18px',
+        '90': '90px',
+      },
     },
   },
   plugins: [
