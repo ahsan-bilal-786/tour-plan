@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: '380px',
+        xs: '320px',
         sm: '500px',
         md: '868px',
         mdl: '1000px',
@@ -54,7 +54,17 @@ module.exports = {
         'tp-salmon-pink': "#F2A094",
         'tp-light-silver': "#D9D9D9",
         'tp-venetian-yellow': "#F09141",
-        'tp-jacarta': '#412362'
+        'tp-jacarta': '#412362',
+        'tp-numeric-1': '#EEDF9A',
+        'tp-numeric-2': '#F0C574',
+        'tp-numeric-3': '#F09141',
+        'tp-numeric-4': '#EA732F',
+        'tp-numeric-5': '#DE5C2A',
+        'tp-numeric-6': '#C84638',
+        'tp-numeric-7': '#B63839',
+        'tp-numeric-8': '#A12C46',
+        'tp-numeric-9': '#661E46',
+        'tp-numeric-10': '#45123B'
       },
       backgroundImage: {
         'home_header_mobile': "url('home/home_header_mobile.jpg')",

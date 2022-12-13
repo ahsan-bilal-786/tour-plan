@@ -9,6 +9,8 @@ import OtherAttractions from 'components/AttractionDetail/OtherAttractions';
 import WaitTimes from 'components/AttractionDetail/WaitTimes';
 import DontMiss from 'components/AttractionDetail/DontMiss';
 import TouringPlans from 'components/AttractionDetail/TouringPlans';
+import Movies from 'components/AttractionDetail/Movies';
+import Footer from 'components/Footer';
 
 const AttractionDetail = () => {
   return (
@@ -17,11 +19,13 @@ const AttractionDetail = () => {
       <Banner />
       <Glance />
       <Cover src={travel} className="xs:h-190 md:h-auto md:max-h-[698px]" />
+      <Movies />
       <TouringTips />
       <OtherAttractions />
       <WaitTimes />
       <DontMiss />
       <TouringPlans />
+      <Footer />
     </>
   );
 };

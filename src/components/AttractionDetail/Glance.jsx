@@ -27,7 +27,7 @@ const Details = ({ title, children }) => {
 
 const Overview = () => {
   return (
-    <Container bg="bg-white" className="xs:pt-[49px] md:pt-[108px] xs:pb-[80px] md:pb-[90px]">
+    <Container bg="bg-white" className="xs:pt-[49px] md:pt-[108px] xs:pb-[80px] md:pb-[90px] xs:px-7 md:px-0">
       <div className='flex xs:flex-col md:flex-row md:justify-between md:mb-68 '>
         <div className='xs:mb-11 md:mb-0 md:max-w-[560px]'>
           <SmallHeadings>At a glance</SmallHeadings>
