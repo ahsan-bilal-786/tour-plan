@@ -9,6 +9,7 @@ import ParkLanding from 'pages/ParkLanding';
 import Attraction from 'pages/Attraction';
 import Search from 'pages/Search';
 import AttractionDetail from 'pages/AttractionDetail';
+import Auth from 'pages/Auth/Login';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/attraction",
     element: <Attraction />,
+  },
+  {
+    path: "/auth",
+    element: <Auth />,
   },
   {
     path: "/",
