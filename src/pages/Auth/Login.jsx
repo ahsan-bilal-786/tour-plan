@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderComponent from "components/Search/elements/Header"
 import Container from 'elements/Container';
 import Textfield from 'elements/Form/Textfield';
 import Button from 'elements/Button';
@@ -7,7 +6,6 @@ import Button from 'elements/Button';
 const Auth = () => {
   return (
     <>
-      <HeaderComponent handleSearch={() => { }} />
       <Container className="xs:pt-[51px] md:pt-[100px] xs:pb-[69px] md:pb-[117px]">
         <div className='xs:mb-10 md:mb-14'>
           <h3 className='font-groteskBold text-tp-purple font-semibold	xs:text-20 md:text-30 text-center xs:leading-7 md:leading-10'>
@@ -30,13 +28,13 @@ const Auth = () => {
           <div class="md:max-w-[472px]">
             <div class="xs:text-15 md:text-18 font-normal leading-7">
               <h5 class="text-tp-purple font-bold text-18 xs:mb-6 md:mb-3">Not a member?</h5>
-              <p class="mb-2">
+              <p className="mb-2">
                 Subscribe for access to the Crowd Calendar, Lines app, Touring Plans, and much more!
               </p>
-              <p class="mb-2">
+              <p className="mb-2">
                 Subscriptions come with a 45-day money-back guarantee and do not auto-renew.
               </p>
-              <p class="mb-2">
+              <p className="mb-2">
                 See a full list of member benefits for
                 <a href="/" className='text-tp-purple ml-1 font-semibold'>Walt Disney World</a>,
                 <a href="/" className='text-tp-purple ml-1 font-semibold'>Disneyland</a>,
