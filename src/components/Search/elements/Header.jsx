@@ -3,11 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import logo from "assets/images/logo.png"
 
-const Header = ({ handleSearch }) => {
+const Header = ({ handleSearch, handleSidebar }) => {
   return (
     <div className='flex xs:px-18 md:px-46 h-79 justify-between items-center border-b border-black'>
       <div>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon icon={faBars}  onClick={handleSidebar} className="cursor-pointer" />
       </div>
       <div>
         <img src={logo} alt="logo" className='h-35' />
