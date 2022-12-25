@@ -21,7 +21,7 @@ const Expire = () => {
     <section className="bg-tp-neutral">
       <div className="mx-auto bg-tp-neutral py-20">
         <div className='mb-10 text-center flex flex-col items-center'>
-          <h1 className="xs:text-24 md:text-30 mb-1 font-groteskBold text-tp-purple-500 font-semibold">
+          <h1 className="capitalize xs:text-24 md:text-30 mb-1 font-groteskBold text-tp-purple-500 font-semibold">
             When disney tickets expire
           </h1>
           <p className='xs:text-13 md:text-18 font-normal xs:uppercase md:normal-case md:max-w-[1080px]'>
