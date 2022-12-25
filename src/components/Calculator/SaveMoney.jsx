@@ -3,7 +3,7 @@ import Container from 'elements/Container';
 
 const SaveMoneyCard = ({ count, title, description }) => {
   return (
-    <div className='text-white xs:mb-6 md:mb-8 '>
+    <div className='text-white xs:mb-6 md:mb-8 md:flex-1'>
       <div className='mb-4 md:mb-9'>
         <span className='border-4 border-tp-brown-300 rounded-full w-16 h-16 inline-flex items-center justify-center text-30 text-tp-brown-300 font-semibold font-groteskSemiBold'>{count}</span>
       </div>
