@@ -3,6 +3,7 @@ import map from "lodash/map";
 import { navLinks } from "App";
 import { Outlet, Link } from "react-router-dom";
 import HeaderComponent from "components/Search/elements/Header"
+import Footer from 'components/Footer';
 
 const Layout = (props) => {
   const [showSidebar, handleSidebar] = useState(false);
@@ -21,6 +22,7 @@ const Layout = (props) => {
       <main className='grow'>
         <HeaderComponent handleSearch={() => { }} handleSidebar={() => handleSidebar(!showSidebar)} />
         <Outlet {...props} />
+        <Footer />
       </main>
     </div>
   );

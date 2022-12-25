@@ -4,6 +4,11 @@ import FindTicketDiscount from "components/Calculator/FindTicketDiscount"
 import Forms from "components/Calculator/Forms"
 import WorldTickets from "components/Calculator/WorldTickets"
 import Database from "components/Calculator/Database"
+import Expire from "components/Calculator/Expire"
+import TicketAddons from "components/Calculator/TicketAddons"
+import AnnualPasses from "components/Calculator/AnnualPasses"
+import SaveMoney from "components/Calculator/SaveMoney"
+import PriceIncreases from "components/Calculator/PriceIncreases"
 
 const Calculator = () => {
   return (
@@ -13,6 +18,11 @@ const Calculator = () => {
       <Forms />
       <WorldTickets />
       <Database />
+      <Expire />
+      <TicketAddons />
+      <AnnualPasses />
+      <SaveMoney />
+      <PriceIncreases />
     </>
   );
 };

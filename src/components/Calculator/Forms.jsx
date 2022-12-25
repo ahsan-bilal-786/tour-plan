@@ -15,8 +15,8 @@ const Forms = () => {
           Disney Ticket Discount Search
         </h3>
       </div>
-      <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-        <div className='flex-1'>
+      <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+        <div className=''>
           <Select
             label="How Many Adults? (Ages 10+)"
             name="adults"
@@ -24,7 +24,7 @@ const Forms = () => {
             className="md:min-w-[500px]"
           />
         </div>
-        <div className='flex-1 flex justify-end'>
+        <div className=' md:flex md:justify-end'>
           <Select
             label="How Many Children? (Ages 3-9)"
             name="chd"
@@ -34,8 +34,8 @@ const Forms = () => {
         </div>
       </div>
 
-      <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-        <div className='flex-1'>
+      <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+        <div className=''>
           <Select
             label="How Many Days In The Parks? (not including water parks)"
             name="prk"
@@ -43,7 +43,7 @@ const Forms = () => {
             className="md:min-w-[500px]"
           />
         </div>
-        <div className='flex-1 flex justify-end'>
+        <div className=' flex justify-end'>
           <Select
             label="Choose Dates for Your Trip?"
             name="trp"
@@ -54,8 +54,8 @@ const Forms = () => {
         </div>
       </div>
 
-      <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-        <div className='flex-1'>
+      <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+        <div className=''>
           <TextField
             label="First Day in a Park"
             name="firstDay"
@@ -63,7 +63,7 @@ const Forms = () => {
             className="md:min-w-[500px]"
           />
         </div>
-        <div className='flex-1 flex justify-end'>
+        <div className=' flex justify-end'>
           <TextField
             label="Last Day in a Park"
             name="lastDay"
@@ -73,8 +73,8 @@ const Forms = () => {
         </div>
       </div>
 
-      <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-        <div className='flex-1'>
+      <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+        <div className=''>
           <Select
             label="Visit More Than One Park per Day?"
             name="prk"
@@ -82,18 +82,18 @@ const Forms = () => {
             className="md:min-w-[500px]"
           />
         </div>
-        <div className='flex-1'></div>
+        <div className=''></div>
       </div>
 
       <p 
-        class={`text-tp-purple cursor-pointer text-18 font-bold mb-1 ${advanceSearch ? "hidden" : ""}`} 
+        class={`text-tp-purple cursor-pointer xs:text-15 md:text-18 font-bold mb-1 ${advanceSearch ? "hidden" : ""}`} 
         onClick={() => setAdvanceSearch(true)}
       >
         Show Advanced Options<FontAwesomeIcon icon={faArrowRight} className="ml-3" />
       </p>
       <div className={`${advanceSearch ? "" : "hidden"}`}>
-        <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-          <div className='flex-1'>
+        <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+          <div className=''>
             <Select
               label="How Many Days At The Water Parks?"
               name="prk2"
@@ -102,7 +102,7 @@ const Forms = () => {
               hint="Make sure water parks are open during your visit!"
             />
           </div>
-          <div className='flex-1 flex justify-end'>
+          <div className=' flex justify-end'>
             <Select
               label="Are You a Florida Resident?"
               name="trp1"
@@ -111,8 +111,8 @@ const Forms = () => {
             />
           </div>
         </div>
-        <div className='flex xs:grid-cols-1 md:grid-cols-2'>
-          <div className='flex-1'>
+        <div className='grid xs:grid-cols-1 md:grid-cols-2'>
+          <div className=''>
             <Select
               label="Are You Going To Return Within 12 Months?"
               name="prk2"
@@ -120,7 +120,7 @@ const Forms = () => {
               className="md:min-w-[500px]"
             />
           </div>
-          <div className='flex-1 flex justify-end'>
+          <div className=' flex justify-end'>
             <Select
               label="Are Third-Party Ticket Vendors OK?"
               name="trp21"

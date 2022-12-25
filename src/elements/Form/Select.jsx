@@ -14,7 +14,7 @@ const Select = ({ label, options, className, ...rest }) => {
         ))}
       </select>
       {rest.hint && (
-        <div className='relative'><p className='absolute text-13 font-medium italic text-tp-purple'>{rest.hint}</p></div>
+        <div className='relative'><p className='md:absolute text-13 font-medium italic text-tp-purple'>{rest.hint}</p></div>
       )}
     </div>
   );
