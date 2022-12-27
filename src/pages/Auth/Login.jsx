@@ -28,13 +28,13 @@ const Auth = () => {
           <div class="md:max-w-[472px]">
             <div class="xs:text-15 md:text-18 font-normal leading-7">
               <h5 class="text-tp-purple font-bold text-18 xs:mb-6 md:mb-3">Not a member?</h5>
-              <p className="mb-2">
+              <p class="mb-2">
                 Subscribe for access to the Crowd Calendar, Lines app, Touring Plans, and much more!
               </p>
-              <p className="mb-2">
+              <p class="mb-2">
                 Subscriptions come with a 45-day money-back guarantee and do not auto-renew.
               </p>
-              <p className="mb-2">
+              <p class="mb-2">
                 See a full list of member benefits for
                 <a href="/" className='text-tp-purple ml-1 font-semibold'>Walt Disney World</a>,
                 <a href="/" className='text-tp-purple ml-1 font-semibold'>Disneyland</a>,

@@ -14,6 +14,7 @@ import Auth from 'pages/Auth/Login';
 import Calculator from 'pages/Calculator';
 
 
+
 export const navLinks = [
   {
     path: "/attraction_detail",
