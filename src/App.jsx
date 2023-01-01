@@ -12,6 +12,7 @@ import Search from 'pages/Search';
 import AttractionDetail from 'pages/AttractionDetail';
 import Auth from 'pages/Auth/Login';
 import Calculator from 'pages/Calculator';
+import HeightRequirements from "pages/HeightRequirements"
 
 
 
@@ -45,6 +46,11 @@ export const navLinks = [
     path: "/calculator",
     title: "Calculator",
     element: <Calculator />,
+  },
+  {
+    path: "/height",
+    title: "Height Requirments",
+    element: <HeightRequirements />,
   },
   {
     path: "/auth",
