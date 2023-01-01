@@ -1,5 +1,4 @@
 import React from 'react';
-import HeaderComponent from "components/Search/elements/Header"
 import Container from 'elements/Container';
 import Textfield from 'elements/Form/Textfield';
 import Button from 'elements/Button';
@@ -7,7 +6,6 @@ import Button from 'elements/Button';
 const Auth = () => {
   return (
     <>
-      <HeaderComponent handleSearch={() => { }} />
       <Container className="xs:pt-[51px] md:pt-[100px] xs:pb-[69px] md:pb-[117px]">
         <div className='xs:mb-10 md:mb-14'>
           <h3 className='font-groteskBold text-tp-purple font-semibold	xs:text-20 md:text-30 text-center xs:leading-7 md:leading-10'>
