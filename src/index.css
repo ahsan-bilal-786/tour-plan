@@ -28,6 +28,13 @@
 }
 
 @font-face {
+  font-family: 'Euclid Circular B Medium';
+  src: url('./assets/fonts/eucliar/Euclid_Circular_B_Medium.ttf');
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: 'Euclid Circular B Bold';
   src: url('./assets/fonts/eucliar/Euclid_Circular_B_Bold.ttf');
   font-style: normal;
