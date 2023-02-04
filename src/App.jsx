@@ -14,7 +14,7 @@ import Auth from 'pages/Auth/Login';
 import Calculator from 'pages/Calculator';
 import TicketCalculator from 'pages/TicketCalculator';
 import HeightRequirements from "pages/HeightRequirements"
-
+import TouringPlan from "pages/TouringPlan";
 
 
 export const navLinks = [
@@ -37,6 +37,11 @@ export const navLinks = [
     path: "/park_landing",
     title: "ParkLanding",
     element: <ParkLanding />,
+  },
+  {
+    path: "/touring-plan",
+    title: "Touring Plan",
+    element: <TouringPlan />,
   },
   {
     path: "/attraction",

@@ -39,6 +39,11 @@
   src: url('./assets/fonts/eucliar/Euclid_Circular_B_Bold.ttf');
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
 
 body {
   font-family: "Euclid Circular B", sans-serif;

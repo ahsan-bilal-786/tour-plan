@@ -27,28 +27,28 @@ import Topheader from 'components/ParkLanding/Topheader';
  */
 const ParkLanding = () => {
   return (
-    <>
+    <div className='scroll-pt-[200px] scroll-smooth'>
       <Topheader />
       <Banner />
       <Overview />
-      <WhenToVisit />
+      <div id="when_to_visit"><WhenToVisit /></div>
       <Cover src={cartoon} className="max-h-[458px]" />
       <SpecialEvents />
       <SubscribeFullAccess />
       <Cover src={travel} className="max-h-[464px]" />
-      <PlanningYourDay />
+      <div id="when_to_visit"><PlanningYourDay /></div>
       <MinuteAccess />
       <DontLeaveHome />
-      <WhatToSeeDo />
+      <div id="when_to_see"><WhatToSeeDo /></div>
       <InBetweenRides />
       <RoundOutDay />
       <Cover src={fireworks} className="max-h-[887px]" />
       <Attractions />
-      <Dinning />
+      <div id="dinning"><Dinning /></div>
       <Cover src={dinning} className="max-h-[564px]" />
       <DinningSources />
       <Footer />
-    </>
+    </div>
   );
 };
 
