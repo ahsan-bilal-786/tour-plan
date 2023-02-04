@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="flex justify-center xs:mb-5 md:mb-10">
           <img className="xs:w-[68px] md:w-[129px]" src={TourPlan} alt="TourPlan"  />
         </div>
-        <h1 className="text-36 line-60 mb-4 md:text-50 xl:text-60 font-groteskSemiBold font-semibold">Walt Disney World Touring Plans
+        <h1 className="text-36 leading-60 mb-4 md:text-50 xl:text-60 font-groteskSemiBold font-semibold">Walt Disney World Touring Plans
         </h1>
         <div className='max-w-[640px] mx-auto'>
           <p>
