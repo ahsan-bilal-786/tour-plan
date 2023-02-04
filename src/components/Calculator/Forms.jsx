@@ -75,7 +75,7 @@ const Forms = () => {
             name="trp"
             options={["Yes", "No"]}
             hint=" Tip: Pick dates, if possible! Date-specific tickets are cheaper than 'Flexible Dates' tickets."
-            className="md:min-w-[500px]"
+            className="md:min-w-[500px] "
           />
         </div>
       </div>
@@ -86,7 +86,7 @@ const Forms = () => {
             label="First Day in a Park"
             name="firstDay"
             type="date"
-            className="md:min-w-[500px]"
+            className="md:min-w-[500px] "
           />
         </div>
         <div className=' flex justify-end'>
@@ -94,7 +94,7 @@ const Forms = () => {
             label="Last Day in a Park"
             name="lastDay"
             type="date"
-            className="md:min-w-[500px]"
+            className="md:min-w-[500px] "
           />
         </div>
       </div>

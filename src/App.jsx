@@ -12,6 +12,7 @@ import Search from 'pages/Search';
 import AttractionDetail from 'pages/AttractionDetail';
 import Auth from 'pages/Auth/Login';
 import Calculator from 'pages/Calculator';
+import TicketCalculator from 'pages/TicketCalculator';
 import HeightRequirements from "pages/HeightRequirements"
 
 
@@ -41,6 +42,11 @@ export const navLinks = [
     path: "/attraction",
     title: "Attraction",
     element: <Attraction />,
+  },
+  {
+    path: "/ticket-calculator",
+    title: "Ticket Calculator",
+    element: <TicketCalculator />,
   },
   {
     path: "/calculator",
