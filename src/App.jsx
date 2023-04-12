@@ -15,9 +15,17 @@ import Calculator from 'pages/Calculator';
 import TicketCalculator from 'pages/TicketCalculator';
 import HeightRequirements from "pages/HeightRequirements"
 import TouringPlan from "pages/TouringPlan";
+import RequestRoom from "pages/RequestRoom";
+
 
 
 export const navLinks = [
+  {
+    path: "/request-room",
+    title: "RequestRoom",
+    element: <RequestRoom />,
+  },
+
   {
     path: "/attraction_detail",
     title: "AttractionDetail",
