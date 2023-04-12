@@ -36,7 +36,7 @@ const Subscriber = () => {
           </div>
         </div>
         <div className="flex-1 py-8 lg:py-16">
-          <h3 className="ml-12 hidden md:visible text-30 text-[#F6576680] font-semibold leading-10 font-groteskSemiBold pb-5">
+          <h3 className="ml-12 hidden md:flex text-30 text-[#F6576680] font-semibold leading-10 font-groteskSemiBold pb-5">
             My Trips
           </h3>
           <div className="bg-white rounded-[20px] border-2 border-[#F6576680] py-6 px-9 -mr-[20px] ">
