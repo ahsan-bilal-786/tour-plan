@@ -12,7 +12,7 @@ const Banner = () => {
             alt="TourPlan"
           />
         </div>
-        <h1 className="text-36 leading-60 mb-4 md:text-50 xl:text-60 font-groteskSemiBold font-semibold">
+        <h1 className="text-36 leading-10 md:leading-60 mb-4 md:text-50 xl:text-60 font-groteskSemiBold font-semibold">
           Request Your Room
         </h1>
         <div className="max-w-[860px] mx-auto">

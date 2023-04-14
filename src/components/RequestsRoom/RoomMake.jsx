@@ -4,8 +4,8 @@ import Image from "assets/images/img_02.png";
 
 const RoomMake = () => {
   return (
-    <Container bg="bg-tp-gray-400" className="py-[85px]">
-      <h3 class="text-tp-purple font-semibold xs:text-20 md:text-30 text-center xs:leading-7 xs:mb-7  md:mb-73 md:leading-46 font-groteskBold">
+    <Container bg="bg-tp-gray-400" className=" py-[60px] md:py-[85px]">
+      <h3 class="text-tp-purple font-semibold xs:text-24 md:text-30 text-center xs:leading-7 xs:mb-7  md:mb-73 md:leading-46 font-groteskBold">
         What difference does a room make?
       </h3>
       <div className="flex gap-x-[70px] justify-between flex-col  md:flex-row ">
@@ -19,7 +19,7 @@ const RoomMake = () => {
         <div className="flex items-end gap-3 md:gap-[18px] justify-center  md:justify-start">
           <div className="flex gap-4 flex-col items-center">
             <img src={Image} alt="Image" />
-            <h6 className="text-tp-purple text-sm md:text-18 text-center  font-bold leading-7">
+            <h6 className="text-tp-purple text-sm md:text-18 text-center  font-bold leading-5 md:leading-7">
               The view from the ground floor
             </h6>{" "}
           </div>
@@ -28,7 +28,7 @@ const RoomMake = () => {
           </div>
           <div className="flex gap-4 flex-col items-center">
             <img src={Image} alt="Image" />
-            <h6 className="text-tp-purple text-sm md:text-18  text-center font-bold leading-7">
+            <h6 className="text-tp-purple text-sm md:text-18  text-center font-bold  leading-5 md:leading-7">
               The view from one floor higher
             </h6>{" "}
           </div>

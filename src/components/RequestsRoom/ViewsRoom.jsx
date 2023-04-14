@@ -7,39 +7,39 @@ const ViewsRoom = () => {
   return (
     <section className="flex items-start flex-col md:flex-row">
       <div className="flex max-w-full md:max-w-[600px] xxl:max-w-[810px] flex-wrap">
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
 
-        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px]" />
+        <img src={Image} alt="image" className="min-w-[75px] max-h-[75px] md:min-w-[135px] md:max-h-[135px] grow" />
       </div>
       <div className="flex-1 md:py-[150px] xs:p-[40px]  md:px-[160px] max-w-full  md:max-w-auto">
         <div className="max-w-full md:max-w-[450px] text-center md:text-left">
