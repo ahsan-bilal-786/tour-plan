@@ -1,24 +1,47 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import QuestionMark from "assets/images/questionMark.png";
+import StarFilled from "assets/images/blackStar.svg"
+import StarPartial from "assets/images/blackPartialEmpty.svg"
+
+const RatingStars = ({ size = 18 }) => (
+  <div className='flex gap-[2px]'>
+    <img alt="imagealt" width={size} height={size} src={StarFilled} />
+    <img alt="imagealt" width={size} height={size} src={StarFilled} />
+    <img alt="imagealt" width={size} height={size} src={StarFilled} />
+
+    <img alt="imagealt" width={size} height={size} src={StarFilled} />
+
+    <img alt="imagealt" width={size} height={size} src={StarPartial} />
+  </div>
+)
 
 const Row = ({ isOdd, title, rating }) => {
   return (
-    <div className={`${isOdd ? "bg-tp-gray-400" : ""}`}>
+    <div className={`${isOdd ? "bg-tp-gray-400" : ""}` }>
       <div className="max-w-[1068px] mx-auto">
-        <div className={`flex flex-wrap py-9 leading-7 text-18 items-center`}>
-          <div className="xs:w-[100%] md:w-[49%] xs:pl-4 md:pl-0 xs:pb-2 md:pb-0 md:pr-2 xs:text-15 md:text-18 flex flex-row font-bold items-center">
+        <div className={`flex gap-3 md:gap-2  items-center`}>
+          <div className="    xs:py-5 md:py-9 mr-auto w-[100%] xs:pl-4 md:pl-0   flex flex-row font-normal items-center">
             <img
-              class="xs:w-[25px] md:w-[50px] xs:h-[25px] md:h-[50px] xs:mr-2 md:mr-5 shadow rounded-full max-w-full h-auto border-none"
+              class="xs:w-[25px] hidden md:inline-flex  md:w-[50px] xs:h-[25px] md:h-[50px] xs:mr-2 md:mr-5 shadow rounded-full max-w-full h-auto border-none"
               src="https://via.placeholder.com/223x223.png"
               alt=""
             />
-            {title}
+            <div className="xs:text-15 flex gap-3 items-center leading-5    md:text-30 md:leading-10 font-bold md:font-thin">
+              {" "}
+              {title}{" "}
+              <img
+                className="cursor-pointer"
+                src={QuestionMark}
+                alt="QuestionMark"
+              />
+            </div>
           </div>
-          <div className="xs:w-[50%] md:w-[30%] md:pr-2 xs:pl-[50px] md:pl-[0px]  flex xs:text-24 md:text-36 font-light font-eucliarLight">
-            {rating}
+          <div className="hidden  xs:py-5 md:py-9 w-[20%]  md:inline-flex xs:text-24 md:text-36 font-light font-eucliarLight">
+    <RatingStars />
           </div>
-          <div className="xs:w-[25%] md:w-[19%] md:pr-2 flex xs:text-24 md:text-36  font-light font-eucliarLight">
+          <div className="shrink-0 md:shrink  xs:py-5 md:py-9 w-[30%]  inline-flex text-tp-purple  xs:text-15 md:text-18  leading-5 md:leading-10 font-bold cursor-pointer font-groteskBold">
             View Rooms
           </div>
         </div>
@@ -69,27 +92,33 @@ const Saving = () => {
             <Thumb title="Value" isActive={false} />
           </div>
 
-          <div className="overflow-auto">
-            <div className="table-header ">
-              <div className="min-w-[500px] max-w-[1080px] mx-auto">
-                <div className="flex font-eucliarBold justify-between mb-3 xs:text-15 md:text-18 font-bold text-tp-bluish-300 text-left  xs:pl-6 md:pl-0">
-                  <div className="w-[49%] ">Hotel Name</div>
-                  <div className="w-[30%] ">User Rating</div>
-                  <div className="w-[19%] "></div>
+          <div className=" overflow-auto">
+            <div className=" w-full table">
+              <div className="hidden md:block table-header ">
+                <div className=" max-w-[1080px] mx-auto">
+                  <div className="flex text-tp-gray-200 font-eucliarBold justify-between mb-3 xs:text-15 md:text-18 font-bold  text-left  xs:pl-6 md:pl-0 items-center">
+                    <div className="shrink-0 md:shrink w-[100%] ">Hotel Name</div>
+                    <div className="w-[30%] shrink-0 md:shrink ">User Rating</div>
+                    <div className="shrink-0 md:shrink w-[19%] "></div>
+                  </div>
                 </div>
               </div>
+              <Row
+                isOdd={true}
+                title="Disney’s Pop Century Resort"
+                rating={4}
+              />
+              <Row
+                isOdd={false}
+                title="Disney’s All-Star Music Resort	"
+                rating={4}
+              />
+              <Row
+                isOdd={true}
+                title="Disney’s All-Star Movies Resort"
+                rating={4}
+              />
             </div>
-            <Row isOdd={true} title="Disney’s Pop Century Resort" rating={4} />
-            <Row
-              isOdd={false}
-              title="Disney’s All-Star Music Resort	"
-              rating={4}
-            />
-            <Row
-              isOdd={true}
-              title="Disney’s All-Star Movies Resort"
-              rating={4}
-            />
           </div>
         </section>
       </div>
