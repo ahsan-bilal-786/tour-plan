@@ -16,10 +16,14 @@ import TicketCalculator from 'pages/TicketCalculator';
 import HeightRequirements from "pages/HeightRequirements"
 import TouringPlan from "pages/TouringPlan";
 import RequestRoom from "pages/RequestRoom";
-
-
+import RoomDetails from "pages/RoomDetails";
 
 export const navLinks = [
+  {
+    path: "/room-details",
+    title: "RoomDetails",
+    element: <RoomDetails />,
+  },
   {
     path: "/request-room",
     title: "RequestRoom",
