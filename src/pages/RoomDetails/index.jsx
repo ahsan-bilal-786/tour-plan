@@ -7,6 +7,8 @@ import Comments from "components/RoomDetails/Comments";
 import LikeView from "components/RoomDetails/LikeView";
 import PrivateNotes from "components/RoomDetails/PrivateNotes";
 import Tables from "components/RoomDetails/Tables";
+import TouringPicks from "components/RoomDetails/TouringPicks";
+
 
 /**
  *
@@ -24,6 +26,7 @@ const RoomDetails = () => {
       <Comments />
       <PrivateNotes />
       <LikeView />
+      <TouringPicks />
     </div>
   );
 };
