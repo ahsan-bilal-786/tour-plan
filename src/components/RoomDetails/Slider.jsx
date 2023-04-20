@@ -21,10 +21,10 @@ const Slider = () => {
     <Container bg="bg-white" className="mb-58">
       <div className="relative">
         <img src={roomdetails} alt="arrows" width="100%" />
-        <SliderArrow className="top-5 left-[50%] translate-x-[-50%] flex-col" icon={faAngleUp} text="#6634" />
-        <SliderArrow className="left-5 top-[50%] translate-y-[-50%] flex-row" icon={faAngleLeft} text="#6632" />
-        <SliderArrow className="right-5 top-[50%] translate-y-[-50%]  flex-row-reverse" icon={faAngleRight} text="#6633" />
-        <SliderArrow className="bottom-5 left-[50%] translate-x-[-50%] flex-col-reverse !bg-tp-gray-300/70" icon={faAngleDown} text="N/A" />
+        <SliderArrow className="xs:top-2 md:top-5 left-[50%] translate-x-[-50%] flex-col" icon={faAngleUp} text="#6634" />
+        <SliderArrow className="xs:left-2 md:left-5 top-[50%] translate-y-[-50%] flex-row" icon={faAngleLeft} text="#6632" />
+        <SliderArrow className="xs:right-2 md:right-5 top-[50%] translate-y-[-50%]  flex-row-reverse" icon={faAngleRight} text="#6633" />
+        <SliderArrow className="xs:bottom-2 md:bottom-5 left-[50%] translate-x-[-50%] flex-col-reverse !bg-tp-gray-300/70" icon={faAngleDown} text="N/A" />
       </div>
     </Container>
   );

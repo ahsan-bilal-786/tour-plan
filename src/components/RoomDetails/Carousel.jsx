@@ -30,7 +30,7 @@ const Carousel = () => {
   return (
     <Container
       bg="bg-white"
-      className="border-0 border-b-2 border-black w-[100vw]"
+      className="border-0 md:border-b-2 md:border-black w-[100vw]"
     >
       <div className="max-w-1085 relative">
         <Arrow icon={faAngleLeft} className="left-[-48px]" />

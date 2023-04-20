@@ -5,7 +5,7 @@ import Container from 'components/ParkLanding/elements/Container';
 
 const Comments = () => {
   return (
-    <Container bg="bg-tp-neutral" className="xs:pt-[49px] md:pt-[98px] xs:pb-[80px] md:pb-[117px]">
+    <Container bg="bg-tp-neutral" className="xs:pt-[49px] md:pt-[98px] xs:pb-[80px] md:pb-[117px] xs:hidden md:block">
       <SectionHeading className="border-b border-tp-purple leading-10 mb-7">Public Comments (1)</SectionHeading>
       <div className='flex'>
         <img src={faker.image.avatar()} alt="" className='w-[72px] h-[72px] rounded-full mr-8'/>

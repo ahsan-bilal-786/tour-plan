@@ -10,11 +10,11 @@ const LikeView = () => {
         <h1 className="text-30 mb-3 font-groteskSemiBold  font-semibold text-white">
           Like the View?
         </h1>
-        <p className="text-18 mb-4">
+        <p className="xs:text-15 md:text-lg mb-4">
           We can send Disney a request for this room on your behalf! Get a WDW
           Touring Plans subscription to get started!
         </p>
-        <p className="text-18 font-bold text-white">
+        <p className="xs:text-15 md:text-lg font-bold text-white">
           Subscribe Now
           <FontAwesomeIcon icon={faArrowRight} className="ml-3" />
         </p>
