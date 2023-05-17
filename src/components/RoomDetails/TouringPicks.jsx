@@ -12,9 +12,9 @@ const TableRow = ({ col1, col2, col3, col4, className }) => {
       <div className="xs:min-w-[80px] md:min-w-[120px] text-right xs:text-[11px] md:text-[13px] uppercase">
         {col1}
       </div>
-      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1">{col2}</div>
-      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1">{col3}</div>
-      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1">{col4}</div>
+      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1 whitespace-normal	">{col2}</div>
+      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1 whitespace-normal	">{col3}</div>
+      <div className="xs:min-w-[150px] xs:w-[150px] md:w-auto md:flex-1 whitespace-normal	">{col4}</div>
     </div>
     
   );
