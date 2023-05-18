@@ -54,14 +54,14 @@ const ListItem = ({
       <div className="flex flex-row relative">
         <div className="absolute">{isChecked ? <CheckedIcon /> : <Unchecked />}</div>
         <h3
-          className={`font-bold text-lg leading-7 text-tp-purple ml-9 mb-1 ${headingClass} ${
+          className={`font-bold xs:text-15 md:text-lg leading-7 text-tp-purple ml-9 mb-1 ${headingClass} ${
             isHeadingCutted ? "line-through" : ""
           }`}
         >
           {headingText}
         </h3>
       </div>
-      <p className="font-normal text-lg leading-7 text-black pl-9">{bodyText}</p>
+      <p className="font-normal xs:text-15 md:text-lg leading-7 text-black pl-9">{bodyText}</p>
     </div>
   );
 };

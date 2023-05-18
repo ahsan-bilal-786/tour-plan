@@ -32,13 +32,17 @@ const Collapsible = ({ isOpen, heading, children }) => {
         <div className="flex flex-row items-center">
           <div className="w-[23px] mr-4">{isOpen ? <Minus /> : <Plus />}</div>
           <div
-            className={`font-light text-3xl leading-[46px] text-tp-black-300 py-4`}
+            className={`font-light xs:text-lg md:text-3xl leading-[46px] text-tp-black-300 py-4 ${
+              isOpen ? "!font-semibold !font-eucliarSemiBold" : ""
+            }`}
           >
             {heading}
           </div>
         </div>
 
-        <div className="font-semibold text-lg leading-7 text-right text-tp-purple font-eucliarSemiBold">1/2</div>
+        <div className="font-semibold xs:text-15 md:text-lg leading-7 text-right text-tp-purple font-eucliarSemiBold">
+          1/2
+        </div>
       </div>
       {isOpen && <div>{children}</div>}
     </div>
