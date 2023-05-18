@@ -5,8 +5,10 @@ import Accordion from "components/MyTrips/Accordion";
 import Collapsible from "components/MyTrips/Collapsible";
 import Event from "components/MyTrips/Event";
 import ListItem from "components/MyTrips/ListItems";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import EventContent from "components/MyTrips/EventContent";
+import BottomBanner from "components/MyTrips/BottomBanner";
 
 const DashboardTrips = () => {
   return (
@@ -77,8 +79,12 @@ const DashboardTrips = () => {
               </p>
             </div>
           </div>
+          <div className="border-b-2 border-black mb-[54px]"></div>
+          <EventContent />
         </div>
+        
       </div>
+      <BottomBanner />
     </>
   );
 };

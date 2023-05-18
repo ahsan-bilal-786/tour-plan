@@ -38,7 +38,7 @@ const Collapsible = ({ isOpen, heading, children }) => {
           </div>
         </div>
 
-        <div className="font-bold text-lg leading-7 text-right text-tp-purple">1/2</div>
+        <div className="font-semibold text-lg leading-7 text-right text-tp-purple font-eucliarSemiBold">1/2</div>
       </div>
       {isOpen && <div>{children}</div>}
     </div>

@@ -48,25 +48,25 @@ export const BigCard = ({ className, children }) => {
           Kings January 2023
         </h3>
 
-        <div className="font-normal text-lg leading-7 text-black">
-          <p className="">Walt Disney World Resort</p>
+        <div className="font-normal text-lg leading-7 text-black mb-4">
+          <p className="mb-5">Walt Disney World Resort</p>
           <p className="">Jan 4–11, 2023 (7 nights)</p>
-          <p className="">2 Adults, 3 Children</p>
-          <p className="text-purple">Disney’s Fort Wilderness Resort</p>
+          <p className="mb-1">2 Adults, 3 Children</p>
+          <p className="text-purple font-bold text-tp-purple font-eucliarBold">Disney’s Fort Wilderness Resort</p>
         </div>
         <div>
-          <p className="font-semibold text-[13px] leading-5 uppercase">
-            REQUESTING ROOM: <span className="text-tp-purple">4007</span>
+          <p className="font-semibold text-[13px] leading-5 uppercase mb-3">
+            <b className="font-semibold font-eucliarMedium">REQUESTING ROOM:</b> <span className="text-tp-purple">4007</span>
           </p>
           <ListItem
             isChecked={true}
             headingText="Request to be sent Dec 4. Stay tuned!"
-            headingClass=""
+            headingClass="!text-medium !text-black"
             isHeadingCutted={false}
             bodyText=""
           />
         </div>
-        <div className="flex flex-row gap-x-5 uppercase text-tp-gray-300 text-13">
+        <div className="flex flex-row gap-x-5 uppercase text-tp-gray-300 text-13 font-semibold font-eucliarMedium">
           <p>REQUEST DINING</p>
           <p>Edit</p>
           <p>Remove</p>

@@ -28,14 +28,14 @@ const Event = () => {
           <br />
           January 4, 2023
         </div>
-        <div className="xs:text-46 md:text-[40px] font-semibold text-groteskSemiBold text-tp-numeric-8">
+        <div className="xs:text-46 md:text-60 font-semibold text-groteskSemiBold text-tp-numeric-8">
           7
         </div>
-        <div className="text-tp-numeric-8 font-bold text-13">
+        <div className="text-tp-numeric-8 font-semibold text-13  text-groteskBold">
           Large <br />
           Crowds
         </div>
-        <div className="font-semibold text-13 text-tp-purple">
+        <div className="font-semibold text-13 text-tp-purple ">
           ADD
           <br />
           PLAN
