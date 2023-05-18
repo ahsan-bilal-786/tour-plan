@@ -9,11 +9,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import EventContent from "components/MyTrips/EventContent";
 import BottomBanner from "components/MyTrips/BottomBanner";
+import Accounts from "components/MyTrips/Accounts";
 
 const DashboardTrips = () => {
-  const [showDetails, setShowDetails] = useState(true);
+  const [showDetails,] = useState(true);
   return (
     <>
+    <Accounts />
       <div className="flex-1 flex flex-row xs:text-15 md:text-18">
         <div
           className={`flex-1 md:block ${
@@ -55,7 +57,7 @@ const DashboardTrips = () => {
                 <ListItem
                   isChecked={false}
                   headingText="Get familiar with Disney World restaurants"
-                  headingClass=""
+                  headingClass="font-semibold font-eucliarSemiBold"
                   isHeadingCutted={false}
                   bodyText="We have current menus and prices at every Disney World restaurant, all searchable.
                 Check the best days to visit each park"
@@ -63,7 +65,7 @@ const DashboardTrips = () => {
                 <ListItem
                   isChecked={true}
                   headingText="Get familiar with Disney World restaurants"
-                  headingClass=""
+                  headingClass="font-semibold font-eucliarSemiBold"
                   isHeadingCutted={false}
                   bodyText="We have current menus and prices at every Disney World restaurant, all searchable.
                 Check the best days to visit each park"
@@ -71,7 +73,7 @@ const DashboardTrips = () => {
                 <ListItem
                   isChecked={true}
                   headingText="Get familiar with Disney World restaurants"
-                  headingClass=""
+                  headingClass="font-semibold font-eucliarSemiBold"
                   isHeadingCutted={true}
                   bodyText="We have current menus and prices at every Disney World restaurant, all searchable.
                 Check the best days to visit each park"

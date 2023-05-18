@@ -42,8 +42,41 @@ const Unchecked = () => (
   </svg>
 );
 
+const CrossedIcon = () => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+      stroke="#BA272F"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M15 9L9 15"
+      stroke="#BA272F"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M9 9L15 15"
+      stroke="#BA272F"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
 const ListItem = ({
   isChecked,
+  isCrossed,
   headingText,
   headingClass,
   isHeadingCutted,
@@ -52,7 +85,13 @@ const ListItem = ({
   return (
     <div className=" mb-4">
       <div className="flex flex-row relative">
-        <div className="absolute">{isChecked ? <CheckedIcon /> : <Unchecked />}</div>
+        <div className="absolute">
+          {isCrossed ? (
+            <CrossedIcon />
+          ) : (
+            <>{isChecked ? <CheckedIcon /> : <Unchecked />}</>
+          )}
+        </div>
         <h3
           className={`font-bold xs:text-15 md:text-lg leading-7 text-tp-purple ml-9 mb-1 ${headingClass} ${
             isHeadingCutted ? "line-through" : ""
@@ -61,7 +100,9 @@ const ListItem = ({
           {headingText}
         </h3>
       </div>
-      <p className="font-normal xs:text-15 md:text-lg leading-7 text-black pl-9">{bodyText}</p>
+      <p className="font-normal xs:text-15 md:text-lg leading-7 text-black pl-9">
+        {bodyText}
+      </p>
     </div>
   );
 };
