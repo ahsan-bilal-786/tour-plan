@@ -68,7 +68,13 @@ const TableRow = () => {
         <CellWrapper>
           <Title>Link</Title>
           <Value>
-            <a href="http://www.google.com" alt="google">
+            <a
+              href="http://www.google.com"
+              alt="google"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
               http://www.google.com
             </a>
           </Value>
