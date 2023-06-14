@@ -18,8 +18,14 @@ import TouringPlan from "pages/TouringPlan";
 import RequestRoom from "pages/RequestRoom";
 import RoomDetails from "pages/RoomDetails";
 import DashboardTrips from "pages/DashboardTrips";
+import TableDesign from "pages/TableDesign";
 
 export const navLinks = [
+  {
+    path: "/table-design",
+    title: "Table Design",
+    element: <TableDesign />,
+  },
   {
     path: "/dashboard-trips",
     title: "Dashboard Trips",

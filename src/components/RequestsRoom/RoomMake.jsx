@@ -18,7 +18,7 @@ const RoomMake = () => {
         </div>
         <div className="flex items-end gap-3 md:gap-[18px] justify-center  md:justify-start">
           <div className="flex gap-4 flex-col items-center">
-            <img src={Image} alt="Image" />
+            <img src={Image} alt="checkmate" />
             <h6 className="text-tp-purple text-sm md:text-18 text-center  font-bold leading-5 md:leading-7">
               The view from the ground floor
             </h6>{" "}
@@ -27,7 +27,7 @@ const RoomMake = () => {
             Vs.
           </div>
           <div className="flex gap-4 flex-col items-center">
-            <img src={Image} alt="Image" />
+            <img src={Image} alt="checkmate" />
             <h6 className="text-tp-purple text-sm md:text-18  text-center font-bold  leading-5 md:leading-7">
               The view from one floor higher
             </h6>{" "}
