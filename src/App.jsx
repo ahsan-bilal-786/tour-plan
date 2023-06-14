@@ -17,8 +17,14 @@ import HeightRequirements from "pages/HeightRequirements"
 import TouringPlan from "pages/TouringPlan";
 import RequestRoom from "pages/RequestRoom";
 import RoomDetails from "pages/RoomDetails";
+import DashboardTrips from "pages/DashboardTrips";
 
 export const navLinks = [
+  {
+    path: "/dashboard-trips",
+    title: "Dashboard Trips",
+    element: <DashboardTrips />,
+  },
   {
     path: "/room-details",
     title: "RoomDetails",
