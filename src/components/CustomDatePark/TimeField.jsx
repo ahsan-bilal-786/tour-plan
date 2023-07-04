@@ -31,9 +31,9 @@ const TimeField = ({ title, subtitle, radioLabel, note }) => {
         />
       </div>
       {radioLabel && (
-        <div className="flex flex-row">
+        <div className="flex flex-row w-full">
           <Toggle />
-          <div className=" text-black xs:text-15 md:text-[24px] font-medium leading-loose">
+          <div className=" text-black xs:text-15 md:text-[24px] font-medium leading-loose xs:w-[70%] md:w-auto">
             {radioLabel}
           </div>
         </div>
