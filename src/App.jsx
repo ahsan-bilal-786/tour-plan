@@ -19,8 +19,14 @@ import RequestRoom from "pages/RequestRoom";
 import RoomDetails from "pages/RoomDetails";
 import DashboardTrips from "pages/DashboardTrips";
 import TableDesign from "pages/TableDesign";
+import CustomDatePark from "pages/CustomDatePark";
 
 export const navLinks = [
+  {
+    path: "/custom-date-park",
+    title: "Custom Date Park",
+    element: <CustomDatePark />,
+  },
   {
     path: "/table-design",
     title: "Table Design",
