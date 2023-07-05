@@ -4,9 +4,11 @@ import Select from "elements/Form/Select";
 const Dropdown = ({ title, note }) => {
   return (
     <div className="flex flex-col gap-y-3">
-      <label className=" text-black text-[13px] font-eucliarMedium font-medium uppercase  leading-tight">
-        {title}
-      </label>
+      {title && (
+        <label className=" text-black text-[13px] font-eucliarMedium font-medium uppercase  leading-tight">
+          {title}
+        </label>
+      )}
       {note && (
         <div className="text-zinc-600 text-[14px] font-bold leading-tight">
           {note}
