@@ -8,13 +8,12 @@ import {
 import InputField from "components/Search/elements/InputField";
 import Table from "./Table";
 
-
 const CustomTouringPlanAttraction = () => {
   const [keyword, setKeword] = useState("");
   return (
     <>
       <Container className="bg-white mb-28">
-        <div className="flex flex-col gap-y-3 mb-[105px]">
+        <div className="flex flex-col gap-y-3 mb-[105px] xs:w-full ">
           <h1 className="w-full font-groteskBold font-bold text-center text-rose-500 text-30 leading-10">
             Choose Attractions
           </h1>
@@ -31,17 +30,17 @@ const CustomTouringPlanAttraction = () => {
             <FilterLinks title="FILTER BY LOCATION" />
             <FilterTransportation />
           </div>
-          <div className="md:w-3/4">
+          <div className="xs:w-full md:w-3/4">
             <InputField
               showClosedIcon={false}
               handleChange={setKeword}
               value={keyword}
               type="filled"
             />
-            <h3 className="w-[640px] h-[29px] mb-8 text-black text-[18px] font-bold font-eucliarBold leading-7">
+            <h3 className="mb-8 text-black text-[18px] font-bold font-eucliarBold leading-7">
               Filtered by “Our go-tos”
             </h3>
-            <Table />
+             <Table />
           </div>
         </div>
       </Container>
