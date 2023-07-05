@@ -1,7 +1,7 @@
 import React from "react";
 import Select from "elements/Form/Select";
 
-const Dropdown = ({ title, note }) => {
+const Dropdown = ({ title, note, fieldWrapperClass }) => {
   return (
     <div className="flex flex-col gap-y-3">
       {title && (
@@ -14,7 +14,7 @@ const Dropdown = ({ title, note }) => {
           {note}
         </div>
       )}
-      <div className="flex flex-row gap-x-4 mt-4">
+      <div className={`flex flex-row gap-x-4 mt-4 ${fieldWrapperClass}`}>
         <Select
           name="time-fields"
           options={["Yes", "No"]}
