@@ -1,7 +1,7 @@
 import React from "react";
-import Select from "elements/Form/Select";
+import TextfieldComponent from "elements/Form/Textfield";
 
-const Dropdown = ({ title, note, options, dropdownWrapper, fieldWrapperClass }) => {
+const Textfield = ({ title, note, options, dropdownWrapper, fieldWrapperClass }) => {
   return (
     <div className="flex flex-col gap-y-3">
       {title && (
@@ -15,11 +15,8 @@ const Dropdown = ({ title, note, options, dropdownWrapper, fieldWrapperClass }) 
         </div>
       )}
       <div className={`flex flex-row gap-x-4 mt-4 ${fieldWrapperClass}`}>
-        <Select
-          name="time-fields"
-          options={options}
-          dropdownClassName="pr-8"
-          className={`!mb-0 ${dropdownWrapper}`}
+        <TextfieldComponent
+          className={`!mb-0 border-[2px] !border-tp-neutral !bg-tp-neutral py-4 px-4 !rounded-2xl !font-eucliarMedium xs:!text-4 md:!text-6 xs:leading-5 md:leading-7 focus:border-tp-neutral focus:ring-0`}
         />
       </div>
     </div>
@@ -27,9 +24,9 @@ const Dropdown = ({ title, note, options, dropdownWrapper, fieldWrapperClass }) 
 };
 
 
-Dropdown.defaultProps = {
+Textfield.defaultProps = {
   options: ["Yes", "No"],
   dropdownWrapper: ''
 }
 
-export default Dropdown;
+export default Textfield;
