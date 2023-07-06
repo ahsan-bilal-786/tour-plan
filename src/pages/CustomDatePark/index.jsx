@@ -4,9 +4,10 @@ import StepsNavigation, {
 } from "components/CustomDatePark/StepsNavigation";
 import CustomTouringPlan from "components/CustomDatePark/CustomTouringPlan";
 import CustomTouringPlanAttraction from "components/CustomDateParkAttraction/CustomTouringPlan";
+import CustomTouringPlanMeals from "components/CustomDateParkMeals";
 
 const CustomDatePark = () => {
-  const [activeTab, setActiveTab] = useState(Tabs.Attractions);
+  const [activeTab, setActiveTab] = useState(Tabs.Meals);
   return (
     <>
       <StepsNavigation
@@ -17,7 +18,7 @@ const CustomDatePark = () => {
 
       {activeTab === Tabs.DatePark && <CustomTouringPlan />}
       {activeTab === Tabs.Attractions && <CustomTouringPlanAttraction />}
-      {activeTab === Tabs.Meals && <>{Tabs.Meals}</>}
+      {activeTab === Tabs.Meals && <CustomTouringPlanMeals />}
       {activeTab === Tabs.Breaks && <>{Tabs.Breaks}</>}
       {activeTab === Tabs.ViewShare && <>{Tabs.ViewShare}</>}
     </>
