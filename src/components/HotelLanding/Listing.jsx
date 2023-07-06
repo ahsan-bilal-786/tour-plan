@@ -3,7 +3,7 @@ import StarFilled from "assets/images/star-filled.png"
 import StarEmpty from "assets/images/star-empty.png"
 import StarPartial from "assets/images/star-partial.png"
 
-const RatingStars = ({size = 18}) => (
+export const RatingStars = ({size = 18}) => (
   <div className='flex gap-x-2'>
     <img alt="imagealt" width={size} height={size} src={StarFilled} />
     <img alt="imagealt" width={size} height={size} src={StarFilled} />
@@ -13,7 +13,7 @@ const RatingStars = ({size = 18}) => (
   </div>
 )
 
-const FilterLinks = ({ title }) => {
+export const FilterLinks = ({ title }) => {
   return (
     <div className='pb-16'>
       <div className='text-13 uppercase font-medium mb-5'>{title}</div>
@@ -27,7 +27,7 @@ const FilterLinks = ({ title }) => {
   );
 };
 
-const FilterRating = () => {
+export const FilterRating = () => {
   return (
     <div className='pb-16'>
       <div className='text-13 uppercase font-medium mb-5'>FILTER BY RATING</div>
@@ -43,7 +43,7 @@ const FilterRating = () => {
   );
 };
 
-const FilterTransportation = () => {
+export const FilterTransportation = () => {
   return (
     <div>
       <div className='text-13 uppercase font-medium mb-5'>FILTER BY TRANSPORTATION</div>
@@ -59,7 +59,7 @@ const FilterTransportation = () => {
   );
 };
 
-const Statsbar = () => {
+export const Statsbar = () => {
   return (
     <div className='flex justify-between pb-2 border-b-2 border-black'>
       <div>5 Hotels</div>
@@ -70,7 +70,7 @@ const Statsbar = () => {
   );
 };
 
-const ResortCard = () => {
+export const ResortCard = () => {
   return (
     <div className='flex pt-7 pb-12 border-b-2 border-black'>
       <div className='w-[128px] md:w-[175px] mr-2 md:mr-12 shrink-0 md:shrink-1'><img alt="imagealt" className='shadow rounded-full max-w-full h-auto align-middle border-none' src="https://via.placeholder.com/223x223.png" /></div>

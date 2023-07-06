@@ -1,18 +1,20 @@
 import React from "react";
 import Select from "elements/Form/Select";
 
-const Dropdown = ({ title, note }) => {
+const Dropdown = ({ title, note, fieldWrapperClass }) => {
   return (
     <div className="flex flex-col gap-y-3">
-      <label className=" text-black text-[13px] font-eucliarMedium font-medium uppercase  leading-tight">
-        {title}
-      </label>
+      {title && (
+        <label className=" text-black text-[13px] font-eucliarMedium font-medium uppercase  leading-tight">
+          {title}
+        </label>
+      )}
       {note && (
         <div className="text-zinc-600 text-[14px] font-bold leading-tight">
           {note}
         </div>
       )}
-      <div className="flex flex-row gap-x-4 mt-4">
+      <div className={`flex flex-row gap-x-4 mt-4 ${fieldWrapperClass}`}>
         <Select
           name="time-fields"
           options={["Yes", "No"]}
