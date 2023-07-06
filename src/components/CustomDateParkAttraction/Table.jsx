@@ -1,6 +1,5 @@
 import React from "react";
 import Dropdown from "../CustomDatePark/Dropdown";
-import QuestionMark from "assets/images/questionMark.png";
 import StarFilled from "assets/images/blackStar.svg";
 import StarPartial from "assets/images/blackPartialEmpty.svg";
 import heartEmpty from "assets/images/heartEmpty.png";
@@ -20,15 +19,6 @@ const RatingStars = ({ size = 18 }) => (
     <img alt="imagealt" width={size} height={size} src={StarPartial} />
   </div>
 );
-
-const classes = {
-  row1: "flex flex-row gap-x-2  min-w-[48px] items-center",
-  row2: "flex flex-row  gap-x-2 flex-1 min-w-[400px] items-center",
-  row3: "flex flex-row gap-x-2 min-w-[130px] items-center",
-  row4: "flex flex-row  min-w-[88px] items-center",
-  row5: "flex flex-row   min-w-[56px]  items-center",
-  row6: "flex flex-row min-w-[56px]  items-center",
-};
 
 const Row = ({
   wrapperClassName,
@@ -119,7 +109,7 @@ const DataRows = () => {
 
 const Table = () => {
   return (
-    <div className=" overflow-auto">
+    <div className=" overflow-auto mb-20">
       <div className=" w-full table">
         <div className=" md:block table-header ">
           <div className="xs:max-w-full md:max-w-[1080px] mx-auto overflow-hidden">

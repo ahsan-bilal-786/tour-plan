@@ -7,6 +7,7 @@ import {
 } from "components/HotelLanding/Listing";
 import InputField from "components/Search/elements/InputField";
 import Table from "./Table";
+import Button from "elements/Button";
 
 const CustomTouringPlanAttraction = () => {
   const [keyword, setKeword] = useState("");
@@ -40,7 +41,8 @@ const CustomTouringPlanAttraction = () => {
             <h3 className="mb-8 text-black text-[18px] font-bold font-eucliarBold leading-7">
               Filtered by “Our go-tos”
             </h3>
-             <Table />
+            <Table />
+            <Button className="bg-black">Proceed to Meals</Button>
           </div>
         </div>
       </Container>
