@@ -22,7 +22,7 @@ const RangeSection = ({ className }) => {
 const WalkingRange = () => {
   return (
     <Container className="border pt-[40px] xs:pb-[135px] md:pb-[40px] md:px-[56px] mb-[23px] rounded-2xl ">
-      <div className="flex xs:flex-col md:flex-row">
+      <div className="flex xs:flex-col md:flex-row xs:gap-y-10 md:gap-y-0">
         <RangeSection className="border-r border-stone-300 md:pr-[66px]" />
         <RangeSection className="md:pl-[66px]" />
       </div>
