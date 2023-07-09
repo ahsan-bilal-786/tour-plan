@@ -5,9 +5,10 @@ import StepsNavigation, {
 import CustomTouringPlan from "components/CustomDatePark/CustomTouringPlan";
 import CustomTouringPlanAttraction from "components/CustomDateParkAttraction/CustomTouringPlan";
 import CustomTouringPlanMeals from "components/CustomDateParkMeals";
+import ViewShare from "components/CustomDateParkViewShare";
 
 const CustomDatePark = () => {
-  const [activeTab, setActiveTab] = useState(Tabs.Meals);
+  const [activeTab, setActiveTab] = useState(Tabs.ViewShare);
   return (
     <>
       <StepsNavigation
@@ -20,7 +21,11 @@ const CustomDatePark = () => {
       {activeTab === Tabs.Attractions && <CustomTouringPlanAttraction />}
       {activeTab === Tabs.Meals && <CustomTouringPlanMeals />}
       {activeTab === Tabs.Breaks && <>{Tabs.Breaks}</>}
-      {activeTab === Tabs.ViewShare && <>{Tabs.ViewShare}</>}
+      {activeTab === Tabs.ViewShare && (
+        <>
+          <ViewShare />
+        </>
+      )}
     </>
   );
 };
