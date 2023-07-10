@@ -1,10 +1,12 @@
 import { useState } from "react";
 
-const Toggle = () => {
+const Toggle = ({ className }) => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="relative flex flex-col items-center justify-center overflow-hidden">
+    <div
+      className={`relative flex flex-col items-center justify-center overflow-hidden ${className}`}
+    >
       <div className="flex">
         <label class="inline-flex relative items-center mr-5 cursor-pointer">
           <input
