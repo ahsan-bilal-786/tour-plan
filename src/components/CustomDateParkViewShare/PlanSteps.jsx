@@ -67,15 +67,32 @@ const Row = ({
 }) => {
   return (
     <div className={` flex xs:flex-col md:flex-row ${className} `}>
-      <div>{name}</div>
-      <div className="flex flex-row xs:gap-x-4 md:gap-x-0">
-        <div>{action}</div>
-        <div>{arrivalTime}</div>
+      <div className="md:w-[400px]">{name}</div>
+      <div className="flex xs:flex-row-reverse md:flex-row xs:justify-end md:justify-start xs:gap-x-4 md:gap-x-0 xs:ml-10 md:ml-0 xs:mt-2 md:mt-0">
+        <div className="md:w-[70px] flex items-center">{action}</div>
+        <div className="w-[114px] flex items-center">{arrivalTime}</div>
       </div>
-      <div>{wait}</div>
-      <div>{duration}</div>
-      <div>{freeTime}</div>
-      <div>{walkTime}</div>
+      <div className="flex-1 xs:hidden md:flex">{wait}</div>
+      <div className="flex-1 xs:hidden md:flex">{duration}</div>
+      <div className="flex-1 xs:hidden md:flex">{freeTime}</div>
+      <div className="flex-1 xs:hidden md:flex">{walkTime}</div>
+    </div>
+  );
+};
+
+export const PlansTotal = ({ title, value, className }) => {
+  return (
+    <div className={`flex flex-col ${className}`}>
+      <div className="md:px-4 xs:px-0 min-h-[24px] md:border-b-2 md:border-black text-black text-[13px] font-medium uppercase  md:flex">
+        {title}
+      </div>
+      <div className="flex xs:flex-col md:flex-row md:px-4 xs:px-0 text-black capitalize md:py-2 text-[24px] font-bold font-groteskBold items-start justify-start">
+        {value}
+        <div className="md:hidden font-semibold text-[12px]">
+          {" "}
+          Minutes In line
+        </div>
+      </div>
     </div>
   );
 };
@@ -84,6 +101,7 @@ const Table = () => {
   return (
     <div>
       <Row
+        className="md:px-5"
         name={
           <div className="text-black text-[18px] font-bold font-eucliarBold">
             Your Plan Steps (drag to reorder)
@@ -120,7 +138,7 @@ const Table = () => {
       {map(range(3), (val) => (
         <Row
           key={val}
-          className="rounded-2xl border border-blue-400 mb-4 px-5 py-5"
+          className="md:rounded-2xl xs:border-b xs:border-black md:border md:border-blue-400 mb-4 md:px-5 py-5"
           name={
             <div className="flex flex-row gap-x-4">
               <div className="flex md:items-center">
@@ -144,18 +162,43 @@ const Table = () => {
             </div>
           }
           action={
-            <div className="flex xs:flex-row xs:gap-x-4 md:gap-x-0 md:flex-col text-tp-gray-300">
+            <div className="text-[13px] capitlize justify-center items-center flex xs:flex-row xs:gap-x-4 md:gap-x-0 md:flex-col text-tp-gray-300">
               <div>Edit</div>
               <div>Remove</div>
             </div>
           }
-          arrivalTime={<div className="text-tp-gray-300">ADD LL/G+ TIME</div>}
-          wait={<></>}
-          duration={<></>}
-          freeTime={<></>}
-          walkTime={<></>}
+          arrivalTime={
+            <div className="capitlize  text-13 text-tp-gray-300 justify-center items-center ">
+              ADD LL/G+ TIME
+            </div>
+          }
+          wait={<div className="flex justify-center items-center text-24 font-semibold">45</div>}
+          duration={<div className="flex justify-center items-center text-24 font-semibold">24</div>}
+          freeTime={<div className="flex justify-center items-center text-24 font-semibold">66</div>}
+          walkTime={<div className="flex justify-center items-center text-24 font-semibold">335</div>}
         />
       ))}
+      <div className="flex flex-row mt-10">
+        <div className=" flex-1 xs:hidden md:flex">
+          <PlansTotal title="" value="Plans Totals:" className="flex-1" />
+        </div>
+        <div className=" flex-1 flex xs:flex-col md:flex-row xs:gap-y-4 md:gap-y-0">
+          <div className="xs:w-full md:w-auto xs:border-b xs:border-tp-gray-300 md:border-0 xs:pb-4 md:pb-0">
+            <PlansTotal
+              title="TOTAL TIME"
+              value="690 mins"
+              className="flex-1 xs:hidden md:flex"
+            />
+            <div className="md:hidden">690 mins total</div>
+          </div>
+          <div className="flex-1 flex flex-row xs:gap-x-3 md:gap-x-0">
+            <PlansTotal title="IN LINE" value="234" className="flex-1" />
+            <PlansTotal title="BUSY" value="324" className="flex-1" />
+            <PlansTotal title="FREE TIME" value="564" className="flex-1" />
+            <PlansTotal title="WALK TIME" value="342" className="flex-1" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
